@@ -1,0 +1,331 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i,
+center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "微軟正黑體";
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+}
+
+main {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  font-family: "微軟正黑體";
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0px;
+}
+
+select, input {
+  font-family: "微軟正黑體";
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  background: #490b07;
+}
+html body {
+  width: 100%;
+  min-width: 1200px;
+  height: 100%;
+  overflow: hidden;
+}
+html body main {
+  width: 100%;
+  height: 100%;
+}
+html body main article {
+  width: 1100px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px auto;
+}
+html body main article section {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+html body main article section.right .logo {
+  width: 524px;
+  height: 248px;
+  background: url("../images/logo.png") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  left: -5px;
+  top: 64px;
+  z-index: 10;
+}
+html body main article section.right .inputbox {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 304px;
+  left: 101px;
+  z-index: 10;
+}
+html body main article section.right .inputbox .box {
+  width: auto;
+  height: auto;
+}
+html body main article section.right .inputbox .box label {
+  display: block;
+  width: auto;
+  height: auto;
+  position: relative;
+  margin-bottom: 7px;
+}
+html body main article section.right .inputbox .box label:last-child {
+  margin: 0;
+}
+html body main article section.right .inputbox .box label i {
+  width: 25px;
+  height: 33px;
+  background: url(../images/loginIcon.png) no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 8px;
+  left: -43px;
+}
+html body main article section.right .inputbox .box label i.acIC {
+  background-position-y: 0%;
+}
+html body main article section.right .inputbox .box label i.pwIC {
+  background-position-y: 100%;
+}
+html body main article section.right .inputbox .box label i::before {
+  content: "";
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  position: absolute;
+  top: -6px;
+  left: -11.5px;
+}
+html body main article section.right .inputbox .box label input {
+  width: 215px;
+  height: 47px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9e0000), color-stop(45%, #970000), to(#be0000));
+  background: linear-gradient(to bottom, #9e0000 0%, #970000 45%, #be0000 100%);
+  border-radius: 10px;
+  border: solid 1px #ffffff;
+  color: #ffffff;
+  font-size: 20px;
+  padding-left: 10px;
+}
+html body main article section.right .inputbox .box label input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+html body main article section.right .inputbox .box label input::-moz-placeholder {
+  color: #ffffff;
+}
+html body main article section.right .inputbox .box label input:-ms-input-placeholder {
+  color: #ffffff;
+}
+html body main article section.right .inputbox .box label input::-ms-input-placeholder {
+  color: #ffffff;
+}
+html body main article section.right .inputbox .box label input::placeholder {
+  color: #ffffff;
+}
+html body main article section.right .inputbox button {
+  width: 125px;
+  height: 103px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(14%, #835a09), color-stop(76%, #372310));
+  background: linear-gradient(to top, #835a09 14%, #372310 76%);
+  border-radius: 5px;
+  border: solid 2px #fff1d0;
+  -webkit-box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.5019607843);
+          box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.5019607843);
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: 0 0 0 19px;
+}
+html body main article section.right .inputbox button:hover, html body main article section.right .inputbox button:active, html body main article section.right .inputbox button.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#9e0000), color-stop(45%, #970000), to(#be0000));
+  background: linear-gradient(to top, #9e0000 0%, #970000 45%, #be0000 100%);
+}
+html body main article section.right .union {
+  width: 266px;
+  height: 47px;
+  background: url(../images/union.png) no-repeat;
+  margin: 10px 0 0;
+  position: absolute;
+  top: 407px;
+  left: 125px;
+}
+html body main article section.left .img1 {
+  width: 1024px;
+  height: 767px;
+  background: url("../images/img1.png") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  left: -127px;
+  top: 149px;
+  -webkit-animation: img1 0.6s linear 0s;
+          animation: img1 0.6s linear 0s;
+  z-index: 2;
+}
+html body main article section.left .img1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/img1.png") no-repeat;
+  -webkit-animation: lag 0.4s linear 0s, img2 0.6s linear 0.4s;
+          animation: lag 0.4s linear 0s, img2 0.6s linear 0.4s;
+  opacity: 0;
+}
+html body .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 1200px;
+  height: 100%;
+  background: url("../images/bg.jpg") no-repeat top center;
+  z-index: -999;
+}
+
+@-webkit-keyframes img1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes img1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes img2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+}
+@keyframes img2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+}
+@-webkit-keyframes lag {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes lag {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
