@@ -75,7 +75,7 @@ a {
 html {
   width: 100%;
   height: 100%;
-  background: #33230a;
+  background: #001200;
 }
 html body {
   width: 100%;
@@ -190,8 +190,8 @@ html body main article section.right .inputbox .box label input::placeholder {
 html body main article section.right .inputbox button {
   width: 125px;
   height: 103px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(14%, #835a09), color-stop(76%, #372310));
-  background: linear-gradient(to top, #835a09 14%, #372310 76%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#E0AE4E), color-stop(45%, #966C1E), to(#FFFAE8));
+  background: linear-gradient(to top, #E0AE4E 0%, #966C1E 45%, #FFFAE8 100%);
   border-radius: 5px;
   border: solid 2px #fff1d0;
   -webkit-box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.5019607843);
@@ -203,8 +203,10 @@ html body main article section.right .inputbox button {
   margin: 0 0 0 19px;
 }
 html body main article section.right .inputbox button:hover, html body main article section.right .inputbox button:active, html body main article section.right .inputbox button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#9e0000), color-stop(45%, #970000), to(#be0000));
-  background: linear-gradient(to top, #9e0000 0%, #970000 45%, #be0000 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(14%, #835A09), color-stop(76%, #372310));
+  background: linear-gradient(to top, #835A09 14%, #372310 76%);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 html body main article section.right .union {
   width: 266px;

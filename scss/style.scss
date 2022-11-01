@@ -62,7 +62,7 @@ a {
 html {
     width: 100%;
     height: 100%;
-    background: #33230a;
+    background: #001200;
 
     body{
         width: 100%;
@@ -171,7 +171,7 @@ html {
                             button {
                                 width: 125px;
                                 height: 103px;
-                                background: linear-gradient(to top,#835a09 14%,#372310 76%);
+                                background: linear-gradient(to top,#E0AE4E 0%, #966C1E 45%, #FFFAE8 100%);
                                 border-radius: 5px;
                                 border: solid 2px #fff1d0;
                                 box-shadow: 0 5px 10px 2px #00000080;
@@ -182,7 +182,8 @@ html {
                                 margin: 0 0 0 19px;
 
                                 &:hover,&:active,&.active {
-                                    background: linear-gradient(to top, #9e0000 0%, #970000 45%, #be0000 100%);
+                                    background: linear-gradient(to top, #835A09 14%, #372310 76%);
+                                    box-shadow: none;
                                 }
                             }
                         }
