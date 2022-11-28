@@ -217,6 +217,13 @@ html body main article section.right .union {
   top: 407px;
   left: 125px;
 }
+html body main article section.right .ad {
+  width: 370px;
+  height: 70px;
+  position: absolute;
+  top: 490px;
+  left: 85px;
+}
 html body main article section.left .img1 {
   width: 1024px;
   height: 767px;
